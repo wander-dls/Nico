@@ -1,0 +1,11 @@
+import { PricingTable } from "@clerk/nextjs"
+
+
+const Subcription = () => {
+  return (
+    <main>
+      <PricingTable />
+    </main>
+  )
+}
+export default Subcription
