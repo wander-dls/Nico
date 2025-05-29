@@ -15,14 +15,14 @@ const CompanionsLibary = async ({searchParams}: SearchParams) => {
   console.log("Companions:", companions)
   return (
    <main>
-    <section className="flex justify-between gap-4 max-sm:flex-col">
+    <section className="flex justify-between gap-6 max-sm:flex-col">
       <h1>Companion Libary</h1>
       <div className="flex gap-4">
         <SearchInput />
         <SubjectFilter />
       </div>
     </section>
-    <section className="companion-grid">
+    <section className="companion-grid pb-6">
       {companions.map((companion) => (
         <CompanionCard key={companion.id} {...companion} color={getSubjectColor(companion.subject)} />
       ))}

@@ -12,7 +12,7 @@ interface CompanionSessionPageProps {
 const CompanionSession = async ({params}: CompanionSessionPageProps) => {
   const { id } = await params
   // Here you can fetch the companion session data using the id
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const companion = await getCompanion(id)
   const user = await currentUser()
 
